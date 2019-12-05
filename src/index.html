@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>currency</title>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <a href="#" class="logo">
+            <img
+              src="./images/cryptoexch.png"
+              srcset="
+                ./images/cryptoexch@2x.png 2x,
+                ./images/cryptoexch@3x.png 3x
+              "
+              class="logo__image"
+              alt="Криптообмен"
+            />
+          </a>
+          <ul id="menu__list" class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Обменять</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Резервы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Как мы работаем</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">FAQ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Документы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link__active"
+                >Личный кабинет</a
+              >
+            </li>
+          </ul>
+          <ul class="burger">
+            <li class="line line1"></li>
+            <li class="line line2"></li>
+            <li class="line line3"></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <div class="container">
+        <section class="banner">
+          <div class="banner-section">
+            <h2 class="banner-section__title">
+              Меняйте валюты как вам удобно!
+            </h2>
+            <p class="banner-section__text">
+              Просто выберите интересующую вас валюту из перечня доступых, и мы
+              обменяем ее по самому выгодному курсу.
+            </p>
+
+            <img
+              src="./images/trustpilot.png"
+              srcset="
+                ./images/trustpiloth@2x.png 2x,
+                ./images/trustpilot@3x.png  3x
+              "
+              class="trustpilot__image"
+              alt="Trustpilot"
+            />
+          </div>
+          <div class="banner-form">
+            <h3 class="banner-form__title">
+              Выберете одно из направлений обмена
+            </h3>
+
+            <ul class="banner-form__list">
+              <li class="banner-form__item" id="card">
+                <button class="banner-form__btn">
+                  <img
+                    src="./images/bitcoin.png"
+                    srcset="
+                      ./images/bitcoin@2x.png 2x,
+                      ./images/bitcoin@3x.png 3x
+                    "
+                    class="bitcoin"
+                    alt="Bitcoin"
+                  />
+                  <img
+                    src="./images/arrow-right.png"
+                    srcset="
+                      ./images/arrow-right@2x.png 2x,
+                      ./images/arrow-right@3x.png 3x
+                    "
+                    class="arrow-right"
+                    alt="Arrow-right"
+                  />
+                  <img
+                    src="./images/card.png"
+                    srcset="./images/card@2x.png 2x, ./images/card@3x.png 3x"
+                    class="card"
+                    alt="Card"
+                  />
+                </button>
+              </li>
+              <li class="banner-form__item" id="etherium">
+                <button class="banner-form__btn">
+                  <img
+                    src="./images/bitcoin.png"
+                    srcset="
+                      ./images/bitcoin@2x.png 2x,
+                      ./images/bitcoin@3x.png 3x
+                    "
+                    class="bitcoin"
+                    alt="Bitcoin"
+                  />
+                  <img
+                    src="./images/arrow-right.png"
+                    srcset="
+                      ./images/arrow-right@2x.png 2x,
+                      ./images/arrow-right@3x.png 3x
+                    "
+                    class="arrow-right"
+                    alt="Arrow-right"
+                  />
+                  <img
+                    src="./images/etherium.png"
+                    srcset="
+                      ./images/etherium@2x.png 2x,
+                      ./images/etherium@3x.png 3x
+                    "
+                    class="etherium"
+                    alt="Etherium"
+                  />
+                </button>
+              </li>
+              <li class="banner-form__item" id="advcash">
+                <button class="banner-form__btn">
+                  <img
+                    src="./images/bitcoin.png"
+                    srcset="
+                      ./images/bitcoin@2x.png 2x,
+                      ./images/bitcoin@3x.png 3x
+                    "
+                    class="bitcoin"
+                    alt="Bitcoin"
+                  />
+                  <img
+                    src="./images/arrow-right.png"
+                    srcset="
+                      ./images/arrow-right@2x.png 2x,
+                      ./images/arrow-right@3x.png 3x
+                    "
+                    class="arrow-right"
+                    alt="Arrow-right"
+                  />
+                  <img
+                    src="./images/advcash.png"
+                    srcset="
+                      ./images/advcash@2x.png 2x,
+                      ./images/advcash@3x.png 3x
+                    "
+                    class="advcash"
+                    alt="Advcash"
+                  />
+                </button>
+              </li>
+            </ul>
+
+            <form id="form" class="form" action="">
+              <div class="form__put">
+                <div class="form__put-box">
+                  <label class="form__put-label" for="put"
+                    >Вы отправляете
+                  </label>
+                  <input
+                    class="form__put-input"
+                    id="put"
+                    type="text"
+                    name="put"
+                    value="1000"
+                  />
+                </div>
+                <div class="custom-select">
+                  <div class="custom-select-currency">
+                    <img src="./images/card.png" alt="" class="img-currency" />
+                    <div>Visa/Mastercard UAH</div>
+                    <span class="arrow-down"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__comission">
+                Комиссия за обмен
+                <span class="comission-amount">23 UAH</span>
+              </div>
+
+              <div class="form__get">
+                <div class="form__get-box">
+                  <label class="form__get-label" for="get">Вы получите </label
+                  ><input
+                    class="form__get-input"
+                    id="get"
+                    type="text"
+                    name="get"
+                    value="1000"
+                  />
+                </div>
+                <div class="custom-select-currency">
+                  <img
+                    src="./images/etherium.png"
+                    alt=""
+                    class="img-currency"
+                  />
+                  <div>Etherium</div>
+                  <span class="arrow-down"></span>
+                </div>
+              </div>
+              <div class="app-form__agree">
+                <input id="agree" type="checkbox" name="agree" value="agree" />
+                <label class="agree-label" for="agree"
+                  >Я согласен с правилами сервиса
+                </label>
+              </div>
+              <div class="app-form__button">
+                <button type="submit" class="banner-form__submit">
+                  Обменять
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./js/scripts.min.js"></script>
+  </body>
+</html>
