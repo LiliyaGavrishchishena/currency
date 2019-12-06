@@ -40,20 +40,26 @@ input[type='radio'].visually-hidden {
 }
 
 .container {
+  width: 100%;
+  max-width: 290px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin: 0 auto;
-  width: 320px;
-  padding: 0;
-}
 
-@media (min-width: 768px) {
-  .container {
-    width: 680px;
+  @media (min-width: 480px) {
+    max-width: 440px;
   }
-}
 
-@media (min-width: 1440px) {
-  .container {
-    width: 1150px;
+  @media (min-width: 768px) {
+    max-width: 670px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 900px;
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 1200px;
   }
 }
 
